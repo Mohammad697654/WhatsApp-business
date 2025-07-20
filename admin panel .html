@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #2f3542;
+      height: 100vh;
+      color: #fff;
+      padding-top: 20px;
+      position: fixed;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px 20px;
+      color: #ccc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #57606f;
+      color: #fff;
+    }
+
+    .main-content {
+      margin-left: 250px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    .main-content h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .card p {
+      font-size: 24px;
+      color: #2f3542;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>🛠️ Admin Panel</h2>
+    <a href="#">ড্যাশবোর্ড</a>
+    <a href="#">ইউজার ম্যানেজমেন্ট</a>
+    <a href="#">পেমেন্টস</a>
+    <a href="#">রিপোর্টস</a>
+    <a href="#">সেটিংস</a>
+    <a href="#">লগআউট</a>
+  </div>
+
+  <div class="main-content">
+    <h1>Welcome, Admin!</h1>
+    <div class="cards">
+      <div class="card">
+        <h3>মোট ইউজার</h3>
+        <p>1,234</p>
+      </div>
+      <div class="card">
+        <h3>আজকের আয়</h3>
+        <p>৳5,600</p>
+      </div>
+      <div class="card">
+        <h3>Pending Payments</h3>
+        <p>৳2,100</p>
+      </div>
+      <div class="card">
+        <h3>Reports</h3>
+        <p>12</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
